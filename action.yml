@@ -16,7 +16,7 @@ inputs:
   saas_url:
     description: 'QuantumGuard SaaS Backend URL'
     required: false
-    default: 'https://quantum-guard-cli-backend.onrender.com'
+    default: 'https://quantum-guard-cli-backend-1.onrender.com'
 
   auto_remediate:
     description: 'Automatically rewrite legacy code'
