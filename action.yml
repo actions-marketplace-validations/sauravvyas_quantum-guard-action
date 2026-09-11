@@ -36,7 +36,7 @@ runs:
       run: |
         echo "Installing QuantumGuard CLI..."
         pip install --upgrade pip
-        pip install ${{ github.action_path }}/dist/quantumguard-1.0.1-py3-none-any.whl
+        pip install ${{ github.action_path }}/dist/quantumguard-1.0.2-py3-none-any.whl
 
     - name: Run Scan or Remediation
       shell: bash
