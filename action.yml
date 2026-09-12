@@ -16,7 +16,7 @@ inputs:
   saas_url:
     description: 'QuantumGuard SaaS Backend URL'
     required: false
-    default: 'https://quantum-guard-cli-backend.onrender.com'
+    default: 'https://quantum-guard-cli-backend-1.onrender.com'
 
   auto_remediate:
     description: 'Automatically rewrite legacy code'
@@ -36,7 +36,7 @@ runs:
       run: |
         echo "Installing QuantumGuard CLI..."
         pip install --upgrade pip
-        pip install ${{ github.action_path }}/dist/quantumguard-1.0.1-py3-none-any.whl
+        pip install ${{ github.action_path }}/dist/quantumguard-1.0.5-py3-none-any.whl
 
     - name: Run Scan or Remediation
       shell: bash
